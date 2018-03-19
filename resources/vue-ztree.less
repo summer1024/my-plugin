@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+#app{
+    min-height: 100%;
+}
+.ztree_content_wrap div.zTreeDemoBackground{
+    height: auto;
+}
+.ztree_content_wrap{
+    display: flex;
+    ul.ztree{
+        border: none;
+        background: transparent;
+    }
+    .ztree li a {
+        padding:1px 3px 0 5px;
+        margin:0; cursor:pointer;
+        height:auto;
+        color:#FFF;
+        background-color: transparent;
+        text-decoration:none;
+        vertical-align: middle;
+        display: inline-block;
+        &:hover{
+            color: #FFF;
+        }
+        &.curSelectedNode {
+            height:auto;
+        }
+    }
+}

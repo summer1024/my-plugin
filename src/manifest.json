@@ -6,13 +6,22 @@
     {
       "name": "my-command",
       "identifier": "my-command-identifier",
-      "script": "./my-command.js"
+      "script": "./my-command.js",
+      "shortcut": "ctrl cmd j"
+    },
+    {
+        "name": "onSelectedChange",
+        "script": "./selectChange-command.js",
+        "identifier": "onSelectedChange-identifier",
+        "handlers": {
+            "actions": {
+                "SelectionChanged.finish": "onSelectionChanged"
+            }
+        }
     }
   ],
   "menu": {
     "title": "my-plugin",
-    "items": [
-      "my-command-identifier"
-    ]
+    "items": ["my-command-identifier"]
   }
 }
